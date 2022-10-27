@@ -1,0 +1,34 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
+    },
+    
+    "rules": {
+        "no-console": "off",
+        "no-underscore-dangle": 0,
+        "import/extensions": [0, { "<js>": "always" }],
+        "prefer-destructuring": ["error", {
+            "VariableDeclarator": {
+              "array": false,
+              "object": false
+            }
+          }, {
+            "enforceForRenamedProperties": false
+          }]
+    },
+    "extends": "airbnb-base",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
+    }
+    
+}
